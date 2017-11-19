@@ -1,0 +1,176 @@
+\documentclass[a4paper,12pt]{report}%twoside
+
+\usepackage[utf8]{inputenc} % gestion des accents
+\usepackage[T1]{fontenc}
+\usepackage[french]{babel}
+
+\usepackage[bottom=3cm,headheight=15pt]{geometry}%,right=1in,left=1.5in
+\usepackage[onehalfspacing]{setspace}
+\usepackage{cancel}
+\usepackage{lmodern}
+\usepackage[swashQ]{garamondx}
+\usepackage{amsmath}%[fleqn]
+\usepackage{bm}
+
+
+
+\usepackage[bigdelims,cmbraces,garamondx]{newtxmath}
+
+
+
+
+\usepackage{tikz}
+\usepackage{xcolor}
+\usepackage{microtype}
+\usepackage{multirow}
+
+
+%\usepackage{draftwatermark}
+%\SetWatermarkLightness{0.85}
+
+\usepackage{graphicx}
+\usepackage{physics}
+\usepackage{sectsty}
+\usepackage{dsfont}
+%\usepackage{titletoc}
+
+\usepackage{hyperref}
+\usepackage{tocloft}
+%\usepackage{titlesec}
+\usepackage{natbib}
+\usepackage{subeqnarray}
+
+\usepackage{fancyhdr}
+\usepackage{appendix}
+\usepackage{libertine}
+
+
+
+\chapterfont{\color{myNewBlue}}  % sets colour of chapters
+\sectionfont{\color{myNewBlue}}  % sets colour of sections
+
+%\usepackage{showlabels}
+%\showlabels{bibitem}
+%\showlabels{cite}
+
+
+
+
+
+%============================PDFmetadata=====================================
+\hypersetup{pdfauthor={Nozha Farjallah},
+pdftitle={Title},
+pdfsubject={Master Thesis},
+pdfkeywords={Keyword, keyword, keyword, .....}}
+
+
+
+%============================PageStyle=======================================
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[R]{\thepage}
+%\fancyhead[RO]{\rightmark}
+\fancyhead[L]{\scriptsize\color{myBlue}{\leftmark}}
+%\fancyfoot[C]{\tiny Nozha Farjallah}
+
+
+
+\definecolor{myBlue}{HTML}{046380} % #046380
+\definecolor{myDarkBlue}{HTML}{021B22} % #021B22
+\definecolor{myNewBlue}{HTML}{00303E} % #00303E
+\definecolor{myMelon}{HTML}{FF383D} % #FF383D
+\definecolor{myGreen}{HTML}{2B602F} % #2B602F
+\definecolor{myPurple}{HTML}{C93441} % #C93441
+\definecolor{myViolet}{HTML}{661E32} % #661E32
+
+\hypersetup{colorlinks=true,linkcolor=myBlue,citecolor=myPurple,urlcolor=myViolet}
+\usepackage{doi}
+
+\usepackage{lipsum}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\begin{document}
+
+
+%==============================Front-Matter==========================
+
+\include{titlepage}
+
+\clearpage
+\thispagestyle{empty}
+\phantom{a}
+\vfill
+
+\clearpage
+%\thispagestyle{empty}
+%\phantom{a}
+%\vspace{4cm}
+%\begin{flushright}
+%	{\Large{\textit{ À mes chers parents}}}
+%\end{flushright}
+%
+
+{\color{myNewBlue}
+\tableofcontents}
+
+
+
+
+
+
+
+
+
+
+%===============================Main-Matter==========================
+
+
+\include{Introduction}
+\include{Chapter}
+\include{Conclusion}
+
+
+%===============================Back-Matter==========================
+
+
+
+\begin{appendices}
+	\include{Annexe}
+\end{appendices}
+
+\include{Bibliographie}
+
+%====================================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+%====================================================================
+
+
+\end{document}
+
